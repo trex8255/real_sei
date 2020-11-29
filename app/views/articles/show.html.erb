@@ -1,21 +1,49 @@
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/">良い生活</a>
+        <a class="navbar-brand js-scroll-trigger nico" href="/">Better Life</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">HOME</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/step">STEPS</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">DUTY</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/articles">NEWS</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/mindsets">MINDSET</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/actions">現場で</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/#contact">CONTACT US</a></li>
+                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">ホーム</a></li>
+                        <li class="nav-item  mx-0 mx-lg-1 dropdown">
+                            <a class="nav-link dropdown-toggle  py-3 px-0 px-lg-3 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">メニュー</a>
+          <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/duties">生活保護とは</a>
+                                <a class="dropdown-item" href="/actions">申請できる人</a>
+                                <a class="dropdown-item" href="/step">申請までのステップ</a>
+                                <a class="dropdown-item" href="/mindsets">マインドセット</a>
+                                <a class="dropdown-item" href="#">Q&A</a>
+                                <a class="dropdown-item" href="/articles">インタビュー</a>
+                            </div>
+                        </li>
             </ul>
         </div>
     </div>
 </nav>
+
+
+<section class="bgg">
+  <div class="container see">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12">
+          <div class="card-flyer">
+           <div class="card-header h2"><strong><%=@article.title%></strong></div>
+            <div class="text-box">
+              <div class="image-box text-center mt-4">
+                <%=image_tag @article.image, class:"img-fluid", style:"width:100%;"%>
+              </div>
+              <div class="card-body h5 nico">
+                <p class="card-text"><small><%=simple_format(@article.desc)%></small></p>
+              </div>
+              <div class="card-footer "><%=@article.date%>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>

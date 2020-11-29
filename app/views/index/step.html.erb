@@ -1,60 +1,100 @@
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/">良い生活</a>
+        <a class="navbar-brand js-scroll-trigger nico" href="/">Better Life</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">HOME</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/step">STEPS</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">DUTY</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/articles">NEWS</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/mindsets">MINDSET</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/actions">現場で</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/#contact">CONTACT US</a></li>
+                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">ホーム</a></li>
+                        <li class="nav-item  mx-0 mx-lg-1 dropdown">
+                            <a class="nav-link dropdown-toggle  py-3 px-0 px-lg-3 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">メニュー</a>
+          <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/duties">生活保護とは</a>
+                                <a class="dropdown-item" href="/actions">申請できる人</a>
+                                <a class="dropdown-item" href="/step">申請までのステップ</a>
+                                <a class="dropdown-item" href="/mindsets">マインドセット</a>
+                                <a class="dropdown-item" href="#">Q&A</a>
+                                <a class="dropdown-item" href="/articles">インタビュー</a>
+                            </div>
+                        </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="container">
+
+<div class="container see">
+    <div class="text-center">
+        <%=image_tag "/3081629.jpg", style: "width:80%;"%>
+    </div>
 <div id="accordion" class="py-5">
       <div class="card border-0">
           <div class="card-header p-0 border-0" id="heading-239">
-          <button class="btn btn-link accordion-title border-0 collapse" data-toggle="collapse" data-target="#collapse-239" aria-expanded="true" aria-controls="#collapse-239"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>STEP 1 </button>
+          <button class="btn btn-link accordion-title border-0 collapse" data-toggle="collapse" data-target="#collapse-239" aria-expanded="true" aria-controls="#collapse-239"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100">
+          </i>STEP 1　申請＆申請方法 </button>
         </div>
         <div id="collapse-239" class="collapse show" aria-labelledby="heading-239" data-parent="#accordion">
             <div class="card-body accordion-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><strong>持っていくもの</strong><br>
+                    ・持っている通帳全て（行く前に記帳しましょう！）<br>
+                    ・印鑑、働いている人は給与明細、健康保険証のある人は保険証<br>
+                    ・アパート住まいの人は家賃帳や契約書など<br>
+                    ・通帳や印鑑をなくしてしまった人はそのことを申告<br>
+                    ※預金や所持金は数万円くらい残っていても大丈夫です。残高がゼロになる前に申請にいきましょう！<br><br>
+
+                    <strong>提出する書類</strong><br>
+                    生活保護申請書（収入申告書・資産報告書）<br>
+                    一時扶助申請書（アパート入居希望など）<br><br>
+
+                    <strong>もし申請を断られたら？？</strong><br>
+                    申請を受理することと、決定をすることは別です！<br>
+                    「生活保護の申請に来ました」とハッキリ伝えましょう！<br>
+                    申し込みは誰でもできます。役所で断られるべきではないので自信を持って申請してください。</p>
             </div>
         </div>
     </div>
                             <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="card-header p-0 border-0" id="heading-240">
-                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>Is there a 24/7 response for emergencies?                        </button>
+                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>STEP 2　面談</button>
                     </div>
                     <div id="collapse-240" class="collapse " aria-labelledby="heading-240" data-parent="#accordion">
                         <div class="card-body accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>福祉事務所も相談員と面談⇨あなたの担当となる「ケースワーカー」との面談<br>
+                                聞かれること<br>
+                                ・現在の生活状況、所持金額、預貯金<br>
+                                ・生い立ち、健康状態<br>
+                                ・家族構成、誰が何をしているか<br>
+                                ・親兄弟の関係、居場所、支援してくれる親族の有無<br>
+                                ・職歴、学歴、最後に働いていたところや辞めた理由など</p>
                         </div>
                     </div>
                 </div>
                             <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="card-header p-0 border-0" id="heading-241">
-                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>How are owners’ concerns handled?                        </button>
+                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-241" aria-expanded="false" aria-controls="#collapse-241"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>STEP 3　調査・審査                        </button>
                     </div>
                     <div id="collapse-241" class="collapse " aria-labelledby="heading-241" data-parent="#accordion">
                         <div class="card-body accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>・訪問調査<br>
+                                ケースワーカーがアパートや宿泊先に、あなたが住んでいるかどうかの確認のために訪問します<br>
+                                ・資産調査<br>
+                                貯金などの資産状態を調べます<br>
+                                ・扶養照会<br>
+                                役所があなたの家族に連絡をとります<br><br>
+
+                                ※扶養照会とは<br>
+                                生活保護を申請後、福祉事務所があなたの家族などに「〇〇さんを経済的、精神的に援助できないか」と確認の連絡を取ること<br>
+                                扶養照会があっても、援助するしないは家族の自由<br>
+                                また、家族からDVや虐待の被害がある場合は居場所を知られないようにしてもらえます</p>
                         </div>
                     </div>
                 </div>
                             <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="card-header p-0 border-0" id="heading-242">
-                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>How do I get repairs completed to my unit?                        </button>
+                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-242" aria-expanded="false" aria-controls="#collapse-242"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>STEP 4　結果通知                        </button>
                     </div>
                     <div id="collapse-242" class="collapse " aria-labelledby="heading-242" data-parent="#accordion">
                         <div class="card-body accordion-body">
@@ -64,7 +104,7 @@
                 </div>
                             <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="card-header p-0 border-0" id="heading-243">
-                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-243" aria-expanded="false" aria-controls="#collapse-243"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>What are the duties of a property manager?                        </button>
+                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-243" aria-expanded="false" aria-controls="#collapse-243"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>STEP 5　受給開始                        </button>
                     </div>
                     <div id="collapse-243" class="collapse " aria-labelledby="heading-243" data-parent="#accordion">
                         <div class="card-body accordion-body">
@@ -72,26 +112,5 @@
                         </div>
                     </div>
                 </div>
-                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <div class="card-header p-0 border-0" id="heading-244">
-                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-244" aria-expanded="false" aria-controls="#collapse-244"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>Do we receive copies of all invoices paid?                        </button>
                     </div>
-                    <div id="collapse-244" class="collapse " aria-labelledby="heading-244" data-parent="#accordion">
-                        <div class="card-body accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-                            <div class="card border-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <div class="card-header p-0 border-0" id="heading-245">
-                        <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse" data-target="#collapse-245" aria-expanded="false" aria-controls="#collapse-245"><i class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>How are arrears handled?                        </button>
-                    </div>
-                    <div id="collapse-245" class="collapse " aria-labelledby="heading-245" data-parent="#accordion">
-                        <div class="card-body accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-  
 </div>

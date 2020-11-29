@@ -1,57 +1,73 @@
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/">良い生活</a>
+        <a class="navbar-brand js-scroll-trigger nico" href="/">Better Life</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">HOME</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/step">STEPS</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">DUTY</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/articles">NEWS</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/mindsets">MINDSET</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/actions">現場で</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/#contact">CONTACT US</a></li>
+                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/">ホーム</a></li>
+                        <li class="nav-item  mx-0 mx-lg-1 dropdown">
+                            <a class="nav-link dropdown-toggle  py-3 px-0 px-lg-3 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">メニュー</a>
+          <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/duties">生活保護とは</a>
+                                <a class="dropdown-item" href="/actions">申請できる人</a>
+                                <a class="dropdown-item" href="/step">申請までのステップ</a>
+                                <a class="dropdown-item" href="/mindsets">マインドセット</a>
+                                <a class="dropdown-item" href="#">Q&A</a>
+                                <a class="dropdown-item" href="/articles">インタビュー</a>
+                            </div>
+                        </li>
             </ul>
         </div>
     </div>
 </nav>
-<section class="bgg" style="height:1000px;">
+
+<section class="bgg see" style="height:auto;">
 <div class="container py-5">
   <div class="p-5 bg-white rounded shadow mb-5">
+  <div class="d-flex justify-content-center my-2">
+  <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_hch8Tg.json"  background="transparent"  speed="1.25"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+  </div>  
     <!-- Rounded tabs -->
     <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-lg-row text-center bg-light border-0 rounded-nav">
       <li class="nav-item flex-sm-fill">
-        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">準備するもの</a>
+        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">申請できる人</a>
       </li>
       <li class="nav-item flex-sm-fill">
-        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">聞かれる事</a>
+        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">申請する場所</a>
       </li>
       <li class="nav-item flex-sm-fill">
         <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">きおつけてください</a>
       </li>
     </ul>
     <div id="myTabContent" class="tab-content">
-      <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade py-5 show active">
+        <p class="text-muted">生活保護は、最低生活費を下回る収入で暮らしている人は誰でもどこに住んでいても申請できます。「生活に困っている」と判断されたら平等に受けられる権利です。<br>
+        例えば<br>
+        ・会社の寮やアパートを追い出されそうになっている人<br>
+        ・若くて働けるが安定した仕事につけない人<br>
+        ・住所や住民票がなく、ネットカフェや知人の家、または路上生活をしている人<br>
+        ・働いているがその収入だけでの生活が厳しい人<br>
+        ・パートナーのDVや家族の虐待から逃れた人／逃れたい人<br>
+        ・病気や障害で働けない人<br>
+        ・アルコールや薬物などの依存症で悩んでいる人<br>
+        ・年金額が少くて十分な暮らしが営めない高齢の人<br>
+        ・借金や滞納がある人<br>
+        ・車や家があるけど生活が苦しい人<br>
+        ・過去に犯罪歴がある人<br>
+        ・外国籍（一定範囲の方に限る）<br><br>
+        「無差別平等の原理」</p>
       </div>
-      <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade py-5">
+        <p class="text-muted">お近くの福祉事務所（地域によっては保険福祉センターなどと併設／役所の庁舎の中の場合もあり）の生活保護の担当課<br>
+        「福祉課」、「生活福祉課」「社会福祉課」など。総合受付や電話で何課か聞いて見てください。<br>
+        住まいがある人⇨現在あなたが住んでいる自治体の福祉事務所<br>
+        住まいがない人⇨近くの福祉事務所、または自分が住みたい地域の福祉事務所<br><br>
+
+        ※体調が悪かったり、障害があって自分で行くことが難しい場合は電話で「生活保護を申請します。出向くことができないので、きてください」と頼むこともできます</p>
       </div>
     </div>
     <!-- End rounded tabs -->

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:index, :show]
   resources :mindsets, only: [:index]
   resources :actions, only: [:index]
+  resources :duties, only: [:index]
   get "/step" => "index#step"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

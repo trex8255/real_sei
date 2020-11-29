@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
-gem 'sqlite3'
+
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -17,11 +17,16 @@ gem "activeadmin"
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 5.0.0.alpha1'
 gem 'jquery-rails'
+gem 'aws-sdk-s3', require: false
 
-
+group :production do
+gem 'pg'
+gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3'
 end
 
 group :development do
