@@ -131,3 +131,27 @@ a:hover, a:focus {
 .card[data-color="orange"] .category {
     color: #e95e37;
 }
+
+h1 { color: #606271;
+	
+	
+	span {
+		width: 100%;
+		background-image: linear-gradient(
+			to bottom,
+			rgba(31, 9, 176, 0) 50%,
+			rgb(89, 152, 201) 50%,
+			rgb(211, 187, 179) 60%,
+			rgba(172, 137, 106, 0) 60%,
+        );
+        font-size: 3rem;
+		background-size: 0 100%;
+		background-repeat: no-repeat;
+		transition: 250ms linear;
+	}
+
+	// Demo animation
+	span:hover {
+		background-size: 100% 100%;
+	}
+}
